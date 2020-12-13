@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#292929</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">#333333</color>
+    <color name="barcode_background">#99000000</color>
+    <color name="barcode_stroke">#ffffff</color>
+</resources>

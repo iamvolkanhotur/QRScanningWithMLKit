@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:background="@android:color/white"
+    tools:context=".BarcodeScanningActivity">
+    <androidx.camera.view.PreviewView
+        android:id="@+id/barcode_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <volkanhotur.barcodescanner.ViewFinderOverlay
+        android:id="@+id/barcode_overlay"
+        android:layerType="software"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:layout_margin="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:text="@string/scan_with_ml_kit"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view_enable_flash"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="32dp"
+        android:background="@drawable/flash_button_background"
+        android:contentDescription="@string/turn_flash_on_off"
+        android:padding="12dp"
+        android:src="@drawable/ic_round_flash_on" />
+</FrameLayout>

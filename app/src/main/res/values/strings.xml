@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scanner PoC</string>
+    <string name="start_scanning">Start Scanning</string>
+    <string name="turn_flash_on_off">Turn Flash On/Off</string>
+    <string name="view_finder">View Finder</string>
+    <string name="scanner_library">Scanner Library</string>
+    <string name="result">Scanning Result</string>
+    <string name="copy">Copy</string>
+    <string name="scan_with_ml_kit">Scan with ML Kit</string>
+</resources>
